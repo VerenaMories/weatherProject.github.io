@@ -67,7 +67,7 @@ function displayDate() {
   ];
 
   let myDate = new Date();
-  day.innerHTML = days[1];
+  day.innerHTML = days[myDate.getUTCDay()];
   date.innerHTML = myDate.getDate() + months[myDate.getMonth()];
   nextDay.innerHTML = days[myDate.getUTCDay() + 1];
   dayAfter.innerHTML =  days[myDate.getUTCDay() + 2];
